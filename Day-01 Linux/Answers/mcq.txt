@@ -1,0 +1,61 @@
+PART A – MULTIPLE CHOICE QUESTIONS (20 Questions)
+
+1. What is Linux?
+    Operating System Kernel
+
+2. Ubuntu is:
+    Linux Distribution
+
+3. What does WSL stand for?
+    Windows Subsystem for Linux
+
+4. Linux is mainly used for:
+    Servers and Development
+
+5. Which company developed WSL?
+    Microsoft
+
+6. Which command displays the current working directory?
+    pwd
+
+7. Which command lists files and folders?
+    ls
+
+8. Which command displays the current logged-in user?
+    whoami
+
+9. Which command shows the system hostname?
+    hostname
+
+10. Which command displays the current date and time?
+    date
+
+11. Which command displays Linux system information?
+    uname -a
+
+12. Which command creates a new directory?
+    mkdir
+
+13. What is the purpose of pwd?
+    Show Current Directory
+
+14. What is the purpose of ls?
+    List Files and Directories
+
+15. What is the purpose of whoami?
+    Show Current User
+
+16. What is the purpose of hostname?
+    Show System Name
+
+17. What is Ubuntu?
+    Linux Distribution
+
+18. Ubuntu is installed on Windows through:
+    WSL
+
+19. Which command would you use to verify Linux kernel information?
+    uname -a
+
+20. Which command is used to create multiple directories?
+    mkdir
