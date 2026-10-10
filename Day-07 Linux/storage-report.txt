@@ -1,0 +1,185 @@
+-----------Storage Analysis-----------
+
+=========Check filesystem usage using df -h=========
+
+
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.8G     0  3.8G   0% /usr/lib/modules/6.18.33.2-microsoft-standard-WSL2
+none            3.8G  4.0K  3.8G   1% /mnt/wsl
+drivers         427G  421G  6.2G  99% /usr/lib/wsl/drivers
+/dev/sdd       1007G   13G  943G   2% /
+none            3.8G   40K  3.8G   1% /mnt/wslg
+none            3.8G     0  3.8G   0% /usr/lib/wsl/lib
+rootfs          3.8G  2.8M  3.8G   1% /init
+none            3.8G  1.5M  3.8G   1% /run
+none            3.8G     0  3.8G   0% /run/lock
+none            3.8G     0  3.8G   0% /run/shm
+none            3.8G   80K  3.8G   1% /mnt/wslg/versions.txt
+none            3.8G   80K  3.8G   1% /mnt/wslg/doc
+C:\             427G  421G  6.2G  99% /mnt/c
+D:\             500G  2.6G  498G   1% /mnt/d
+snapfuse        128K  128K     0 100% /snap/bare/5
+snapfuse         74M   74M     0 100% /snap/core22/2955
+snapfuse         74M   74M     0 100% /snap/core22/2437
+snapfuse         67M   67M     0 100% /snap/core24/1643
+snapfuse         67M   67M     0 100% /snap/core24/2124
+snapfuse        261M  261M     0 100% /snap/firefox/8763
+snapfuse        262M  262M     0 100% /snap/firefox/8803
+snapfuse        532M  532M     0 100% /snap/gnome-42-2204/247
+snapfuse        607M  607M     0 100% /snap/gnome-46-2404/153
+snapfuse        532M  532M     0 100% /snap/gnome-42-2204/263
+snapfuse         92M   92M     0 100% /snap/gtk-common-themes/1535
+snapfuse        616M  616M     0 100% /snap/gnome-46-2404/168
+snapfuse        395M  395M     0 100% /snap/mesa-2404/1165
+snapfuse        402M  402M     0 100% /snap/mesa-2404/1839
+snapfuse         51M   51M     0 100% /snap/snapd/27710
+snapfuse         45M   45M     0 100% /snap/snapd/28254
+tmpfs           775M   20K  775M   1% /run/user/1000
+
+
+=========Check project folder size using du -sh project=========
+
+4.0K    project/
+
+=========View storage devices using lsblk=========
+
+NAME MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda    8:0    0 356.9M  1 disk
+sdb    8:16   0 159.4M  1 disk
+sdc    8:32   0     2G  0 disk [SWAP]
+sdd    8:48   0     1T  0 disk /var/lib/docker
+                               /snap
+                               /mnt/wslg/distro
+                               /
+
+=========Display UUID information using sudo blkid=========
+
+/dev/sdd: UUID="86cc0e82-eac5-45b0-afae-d9e17ea19724" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/sdb: BLOCK_SIZE="4096" TYPE="ext4"
+/dev/sdc: UUID="5e1acf6b-9ab6-4039-b300-bb2b79f6f6ac" TYPE="swap"
+/dev/sda: BLOCK_SIZE="4096" TYPE="ext4"
+
+=========Display partition details using sudo fdisk -l=========
+
+Disk /dev/ram0: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram1: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram2: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram3: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram4: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram5: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram6: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram7: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram8: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram9: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram10: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram11: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram12: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram13: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram14: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/ram15: 4 MiB, 4194304 bytes, 8192 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/sda: 356.91 MiB, 374251520 bytes, 730960 sectors
+Disk model: Virtual Disk
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/sdb: 159.41 MiB, 167149568 bytes, 326464 sectors
+Disk model: Virtual Disk
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/sdc: 2 GiB, 2147487744 bytes, 4194312 sectors
+Disk model: Virtual Disk
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+
+Disk /dev/sdd: 1 TiB, 1099511627776 bytes, 2147483648 sectors
+Disk model: Virtual Disk
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
