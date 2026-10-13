@@ -7,6 +7,7 @@ I checked the processes consuming the most memory using `ps aux --sort=-%mem | h
 **2. What did I observe?**
 
 The `dockerd` process (PID 456) showed the highest visible memory usage at `1.0%`. The system had 7.6 GiB total RAM, 670 MiB used, 5.5 GiB free, and 6.9 GiB available. Swap usage was 0 B out of 2.0 GiB.
+
 **3. What does that observation tell me?**
 
 The output does not indicate obvious memory pressure at the time of inspection. A large amount of memory was available, and no swap was being used. However, this snapshot cannot rule out temporary memory issues.
