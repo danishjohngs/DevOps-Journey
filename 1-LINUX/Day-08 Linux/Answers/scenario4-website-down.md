@@ -1,11 +1,11 @@
-# Scenario 3 Website down
+# Scenario 4 Website down
 
 **1. What did I check?**
 
 I checked the Nginx service status to determine whether the service was running, stopped, or in a failed state. I also checked recent service logs to investigate possible errors.
 ```
 systemctl status nginx
-systemctl is-active nginx
+
 journalctl -u nginx -n 20
 ```
 
