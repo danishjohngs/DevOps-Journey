@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 name="Xyaro"
 course="Devops Engineering"
