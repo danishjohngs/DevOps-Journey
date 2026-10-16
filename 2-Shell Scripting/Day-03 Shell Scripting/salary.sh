@@ -1,3 +1,5 @@
+#!/bin/bash
+
 read -r -p "Enter your salary: " salary
 echo
 if [ $salary -ge 50000 ]
