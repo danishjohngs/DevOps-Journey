@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "Username: $USER" >> monitor.log
+echo "Username: $(whoami)" >> monitor.log
 echo "Date/Time: $(date)" >> monitor.log
