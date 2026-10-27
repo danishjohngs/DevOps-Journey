@@ -2,6 +2,11 @@
 
 # Backup folder
 
+today()
+{
+    date +"%Y-%m-%d_%H-%M-%S"
+}
+today=$(today)
 while true
 do
 
@@ -83,10 +88,10 @@ done
 
 # Copy all files to the backup folder
 
-cp -r "$source_dir" "$backup_dir"
+cp -r "$source_dir"/* "$backup_dir"
 
 # compress
-today=$(date +"%Y-%m-%d_%H-%M-%S")
+
 tar -czf "$backup_dir/backup-$today.tar.gz" "$source_dir"
 
 #write log
