@@ -1,3 +1,5 @@
+# PART A
+
 ## 1. What is Networking?
 
 **Networking is the communication between different computers.**
@@ -68,3 +70,52 @@ Cables, Fiber, Wifi signals.
 ## 10. Why is Networking important in DevOps?
 
 **Networking serves as the backbone of DevOps.**
+
+
+# PART B
+
+## 1. What does ping do?
+
+**Tests connectivity between the computer and another device or server by sending ICMP echo requests and measuring response time.**
+
+## 2. What does curl do?
+
+**Transfers data to or from a server using protocols such as HTTP and HTTPS. Commonly used to test APIs and access websites from the terminal.**
+
+## 3. What does ip a do?
+
+**Displays network interfaces, their IP addresses, MAC addresses, and interface status.**
+
+## 4. What does hostname -I do?
+
+**Displays the IP addresses assigned to your system's network interfaces.**
+
+## 5. What does nslookup do?
+
+**Queries DNS servers to resolve domain names into IP addresses and retrieve DNS records.**
+
+## 6. What does traceroute do?
+
+**Shows the network path (routers or hops) that packets take to reach a destination and helps identify network delays or routing problems.**
+
+# PART C
+
+## 1. Public IP Address
+
+**A Public IP Address is an IP address used to identify a network or device on the public internet. It is globally routable and assigned by an Internet Service Provider (ISP) or another address allocation authority.
+Example: 117.206.142.113**
+
+## 2. Private IP Address
+
+**A Private IP Address is an IP address used within a private network, such as a home, office, or internal virtual network. It is not directly routable across the public internet.**
+
+## 3. Difference Between Public IP and Private IP
+
+| Public IP                                                                 	| Private IP                                                           	|
+|---------------------------------------------------------------------------	|----------------------------------------------------------------------	|
+| Used for communication over the public internet.                          	| Used within private networks.                                        	|
+| Globally unique while assigned and in use.                                	| Can be reused in different private networks.                         	|
+| Assigned by an ISP or provider.                                           	| Usually assigned by a router or DHCP server.                         	|
+| Routable across the public internet.                                      	| Not directly routable across the public internet.                    	|
+| Can be accessed from the internet when routing and firewall rules permit. 	| Usually requires NAT, VPN, or another mechanism for external access. 	|
+| Example: 117.206.142.113                                                  	| Example: 192.168.1.33                                                	|
