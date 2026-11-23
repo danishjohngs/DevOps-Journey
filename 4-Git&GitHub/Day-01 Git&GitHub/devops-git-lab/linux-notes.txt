@@ -1,0 +1,5 @@
+ls -> list files/directories
+cd -> change directory
+mkdir -> make directory
+mv -> move, rename
+cp -> copy
